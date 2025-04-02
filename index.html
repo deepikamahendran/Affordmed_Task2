@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #601111;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            gap: 20px;
+        }
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            color: rgb(238, 102, 102);
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.4em;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons button {
+            margin: 10px;
+            padding: 14px 28px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+        .cta-buttons .donate {
+            background: #ffcc00;
+            color: black;
+        }
+        .cta-buttons .join {
+            background: white;
+            color: black;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: white;
+        }
+        .service-box {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 60px 20px;
+            background: #fff;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about-text {
+            padding: 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .about p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            background: #f4f4f4;
+        }
+        .value-box {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>WE LOVE ALL PEOPLE</h1>
+            <p>Join us in making a difference by providing food, clean water, medical aid, and education to communities in need. Your support changes lives.</p>
+            <div class="cta-buttons">
+                <button class="donate">Donate Now</button>
+                <button class="join">Join Us</button>
+            </div>
+        </div>
+        
+        <div class="services">
+            <div class="service-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXZylLZLdEOnpA7xCFv_tEqFvcThCY70wK7Q&s" alt="Food"> <h3>Healthy Food</h3> <p>Nourishing communities with essential food supplies.</p></div>
+            <div class="service-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Lrk-8DeNxETXiIBCIkRWusOQPtm_IqV_SQ&s" alt="Water"> <h3>Pure Water</h3> <p>Providing access to clean and safe drinking water.</p></div>
+            <div class="service-box"><img src="https://media.istockphoto.com/id/1437830105/photo/cropped-shot-of-a-female-nurse-hold-her-senior-patients-hand-giving-support-doctor-helping.jpg?s=612x612&w=0&k=20&c=oKR-00at4oXr4tY5IxzqsswaLaaPsPRkdw2MJbYHWgA=" alt="Medical"> <h3>Medical Aid</h3> <p>Ensuring healthcare access for all.</p></div>
+            <div class="service-box"><img src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Education"> <h3>Education</h3> <p>Empowering children through education and learning resources.</p></div>
+        </div>
+        
+        <div class="about">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5G-I7m0faykcV8ym2jRN6TT4ouI4PkhkXw&s" alt="About Us">
+            <div class="about-text">
+                <h2>What we are doing now</h2>
+                <p>We are actively engaged in humanitarian aid, focusing on providing necessary resources such as food, clean water, healthcare, and education. Our volunteers work tirelessly to reach the most vulnerable communities and offer a helping hand.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        
+        <div class="values">
+            <div class="value-box">⭐ <strong>Service beyond self</strong> - We prioritize helping others before anything else.</div>
+            <div class="value-box">🌿 <strong>Sustainability</strong> - Long-term solutions for a brighter future.</div>
+            <div class="value-box">💪 <strong>Empowerment</strong> - Equipping people with the tools they need to succeed.</div>
+            <div class="value-box">🔍 <strong>Integrity</strong> - Transparency and honesty in everything we do.</div>
+            <div class="value-box">📊 <strong>Accountability</strong> - Ensuring every donation reaches those in need.</div>
+            <div class="value-box">📖 <strong>Transparency</strong> - Keeping our supporters informed every step of the way.</div>
+        </div>
+    </div>
+</body>
+</html>
